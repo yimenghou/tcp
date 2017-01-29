@@ -1,21 +1,9 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Wed Aug 10 19:11:37 2016
 
-@author: westwell
-"""
-
-
-import socket
-import sys
-import multiprocessing
-import matplotlib.pylab as plt
-from scipy import signal
-import yaml
+import socket, time, sys, multiprocessing, yaml, SocketServers
+import pylab as plt
 import numpy as np
-import time
-import SocketServer
-
+from scipy import signal
 
 def dataReceiver(queue):
 
@@ -218,4 +206,4 @@ if __name__ == '__main__':
                 print "Receiving complete"
                 break 
     
-    sock.close()
+    sock.close()  

@@ -7,8 +7,6 @@ import yaml
 
 class FPGAHandler(SocketServer.BaseRequestHandler):    
 
-    
-
     def handle(self): 
 
         print "FPGA server's ready .."
